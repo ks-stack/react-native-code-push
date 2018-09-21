@@ -1,5 +1,5 @@
 {
-  "name": "react-native-code-push-diff-match-patch",
+  "name": "react-native-code-push",
   "version": "5.4.2",
   "description": "React Native plugin for the CodePush service",
   "main": "CodePush.js",
