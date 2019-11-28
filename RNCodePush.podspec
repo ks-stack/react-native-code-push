@@ -15,10 +15,19 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '10.0'
 
   s.source       = { :git => "https://github.com/17554265585/react-native-code-push.git", :tag => "v#{s.version}" }
-  s.source_files  = "ios/CodePush/**/*.{h,m}"
+  s.source_files  = "ios/CodePush/*.{h,m}"
 
   s.dependency 'React'
   s.dependency 'SSZipArchive', '~> 2.1'
   s.dependency 'JWT', '~> 3.0.0-beta.7'
   s.dependency 'Base64', '~> 1.1'
+
+  s.subspec "DiffMatchPatch" do |ms|
+    ms.source_files = "ios/DiffMatchPatch/*.{h,m}"
+    ms.compiler_flags = '-fno-objc-arc'
+    ms.subspec "NSString" do |nss|
+      nss.source_files = "ios/DiffMatchPatch/NSString/*.{h,m}"
+      nss.compiler_flags = '-fno-objc-arc'
+    end
+  end
 end
