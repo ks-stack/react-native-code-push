@@ -38,5 +38,10 @@
     "run-sequence": "latest",
     "tslint": "^4.3.1",
     "typescript": "^2.1.5"
+  },
+  "rnpm": {
+    "android": {
+      "packageInstance": "new CodePush(\"A57M3pUGWACAfTjYLBS8hgmyLmTu4ksvOXqog\", getApplicationContext(), BuildConfig.DEBUG, \"https://www.chaxiaoyin.cn\")"
+    }
   }
 }
