@@ -41,7 +41,7 @@
   },
   "rnpm": {
     "android": {
-      "packageInstance": "new CodePush(\"A57M3pUGWACAfTjYLBS8hgmyLmTu4ksvOXqog\", getApplicationContext(), BuildConfig.DEBUG, \"https://www.chaxiaoyin.cn\")"
+      "packageInstance": "new CodePush(getResources().getString(R.string.CodePushDeploymentKey), getApplicationContext(), BuildConfig.DEBUG, getResources().getString(R.string.CodePushServerURL))"
     }
   }
 }
